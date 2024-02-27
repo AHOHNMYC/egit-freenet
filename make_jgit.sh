@@ -80,8 +80,8 @@ do
 	 mkdir ../bin2 &&
 	 find . -name \*.java -type f |
 	 xargs javac \
-		-source 1.5 \
-		-target 1.5 \
+		-source 1.6 \
+		-target 1.6 \
 		-encoding UTF-8 \
 		-g \
 		-d ../bin2) || die "Building $p failed."
