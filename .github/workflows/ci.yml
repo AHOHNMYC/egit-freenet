@@ -15,5 +15,10 @@ jobs:
     - name: Upload as artifact
       uses: actions/upload-artifact@v4
       with:
-        path: .
         name: egit-freenet
+        path: |
+          jgit
+          jgit.jar
+          jgit_src.zip
+          jgit_docs.zip
+          README
