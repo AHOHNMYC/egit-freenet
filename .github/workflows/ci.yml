@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Build using .sh script
+      run: make_jgit.sh
+    - name: Upload as artifact
+      uses: actions/upload-artifact@v4
+      with:
+        path: .
+        name: egit-freenet
