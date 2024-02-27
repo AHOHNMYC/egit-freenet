@@ -11,7 +11,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
     - name: Build using .sh script
-      run: make_jgit.sh
+      run: bash make_jgit.sh
     - name: Upload as artifact
       uses: actions/upload-artifact@v4
       with:
